@@ -18,31 +18,29 @@
       rel="stylesheet"
     />
     <link href="overall.css" rel="stylesheet" />
+    <script type="text/javascript" src="test.js"></script>
   </head>
   <body>
     <div id="container">
       <div id="logo">
         <img src="epicode_logo.png" height="50px" width="200px" />
       </div>
-      <div id="timer"></div>
+      <div id="timer">
+        <div style="height: 100px; max-width: 200px; position: relative">
+          <canvas style="position: absolute" id="myChart"></canvas>
+          <span class="center"
+            >SECONDS<br /><span id="time">16<br /></span>REMAINING</span
+          >
+        </div>
+      </div>
       <div class="questions">
         How can I create a <br /><b>checkbox in HTML?</b>
       </div>
       <div class="options">
-        <span
-          ><button class="option-left">
-            <b>input type="check" </b>
-          </button></span
-        >
-        <span>
-          <button class="option"><b>input type="checkbox"</b></button></span
-        >
-        <span>
-          <button class="option-left"><b>checkbox</b></button></span
-        >
-        <span>
-          <button class="option"><b>input type="button"</b></button></span
-        >
+        <input type="button" class="button" value="<input type = 'check'>" />
+        <input type="button" class="button" value="<input type = 'checkbox'>" />
+        <input type="button" class="button" value="<checkbox>" />
+        <input type="button" class="button" value="<input type = 'button'>" />
       </div>
       <footer>
         <h3>QUESTION 1 <span class="qnum"> / 10</span></h3>
