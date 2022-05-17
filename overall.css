@@ -79,7 +79,7 @@ footer {
     border: 15px solid #00FFFF;
 }
 
-body {background-color:rgba(0, 0, 0, 0.938);background-image: url(assets/bg.jpg); background-repeat: no-repeat; background-size: cover;font-family: 'Inter', sans-serif;}
+body {background-color:rgba(0, 0, 0, 0.938);background-image: url(assets/bg.jpg); background-repeat: no-repeat; background-size: cover; font-family: 'Inter', sans-serif;}
 .Background { text-align: center; ; margin-top:5%; margin-left: 22%; background-size: 1200px; color: rgba(231,231,235,255);}
 .logo {position:absolute; left: 100px; top: 45px}
 #aboveScore {margin-top: 12%; text-align: center; margin-left: -500px}
