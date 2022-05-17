@@ -1,4 +1,89 @@
-body {background-color:rgba(0, 0, 0, 0.938);background-image: url(assets/bg.jpg); background-repeat: no-repeat; background-size: cover;}
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+#logo {
+    padding-left: 30px;
+    padding-top: 50px;
+    margin-bottom: 100px;
+    position: relative;
+    
+}
+
+.questions {
+    font-size: 60px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    width: 100%;
+    font-family: 'Outfit', sans-serif;
+    margin-left: 100px;
+    margin-bottom: 50px;
+
+}
+
+.options {
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+    justify-content: space-between;
+    margin-bottom: 80px;
+    user-select: none;
+    
+}
+
+.option-left {
+    margin-right: -100px;
+}
+.option {
+    margin-left: -100px
+}
+button {
+    border-radius: 50px;
+    font-size: 16px;
+    text-align: center;
+    padding: 30px 100px;
+    color: white;
+    border: 2px solid white;
+    width: 450px;
+    height: 80px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.1) ;
+    box-shadow: 0 0 8px whitesmoke;
+}
+
+button:focus {
+    background-color: rgb(250, 0, 196);
+}
+.qnum {
+    color: rgb(250, 0, 196)
+}
+
+footer {
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+    
+}
+
+#timer {
+    float: right;
+    padding-right: 30px;
+    padding-top: 10px;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 15px solid #00FFFF;
+}
+
+body {background-color:rgba(0, 0, 0, 0.938);background-image: url(assets/bg.jpg); background-repeat: no-repeat; background-size: cover;font-family: 'Inter', sans-serif;}
 .Background { text-align: center; ; margin-top:5%; margin-left: 22%; background-size: 1200px; color: rgba(231,231,235,255);}
 .logo {position:absolute; left: 100px; top: 45px}
 #aboveScore {margin-top: 12%; text-align: center; margin-left: -500px}
