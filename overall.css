@@ -4,7 +4,7 @@
 
 
 
-#logo {
+.logo {
     padding-left: 30px;
     padding-top: 50px;
     margin-bottom: 100px;
@@ -41,7 +41,7 @@
 .option {
     margin-left: -100px
 }
-#container button {
+.container button {
     border-radius: 50px;
     font-size: 16px;
     text-align: center;
@@ -78,10 +78,81 @@ footer {
     border-radius: 50%;
     border: 15px solid #00FFFF;
 }
+#text {
+    color: white;
+    text-align: center;
+    margin-bottom: 25px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 30px;
+}
+
+#subtext {
+    font-family: 'Outfit', sans-serif;
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 30px;
+
+}
+
+#stars {
+    text-align: center;
+    margin-bottom: 60px;
+}
+.star {
+    padding: 0 8px;
+    align-items: center;
+    display: inline-block;
+}
+
+#feedback-statement {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+#comment {
+
+    margin-top: 20px;
+    margin-left: 210px;
+
+}
+
+#comment input {
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 25px;
+
+
+}
+
+hr {
+    margin-top: 5px;
+    margin-left: 170px;
+    margin-right: 200px;
+    margin-bottom: 60px;
+    border: 1px solid #D20094
+}
+
+#button {
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+.btn {
+    background-color: #00FFFF;
+    border: none;
+    font-size: 30px;
+    padding: 15px 50px;
+    box-shadow: 2px 2px 40px #00FFFF;
+    cursor: pointer;
+}
 
 body {background-color:rgba(0, 0, 0, 0.938);background-image: url(assets/bg.jpg); background-repeat: no-repeat; background-size: cover; font-family: 'Inter', sans-serif;}
 .Background { text-align: center; ; margin-top:5%; margin-left: 22%; background-size: 1200px; color: rgba(231,231,235,255);}
-.logo {position:absolute; left: 100px; top: 45px}
+#logo {position:absolute; left: 100px; top: 45px}
 #aboveScore {margin-top: 12%; text-align: center; margin-left: -500px}
 #aboveScore h1 {font-size: 40pt; font-weight: bolder; font-family: 'Outfit', sans-serif; }
 #aboveScore p { font-size: 20pt; font-family:'Times New Roman', Times, serif; margin-top: -2%; font-family: 'Outfit', sans-serif}
