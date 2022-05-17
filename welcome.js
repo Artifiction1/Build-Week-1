@@ -1,3 +1,8 @@
-document.getElementsByClassName("checkbox-white").checked = true;
-document.getElementsByClassName("checkbox-white").checked = false;
-
+function check() {
+    document.getElementsByClassName("checkbox").checked = true;
+  }
+  
+  function uncheck() {
+    document.getElementsByClassName("checkbox").checked = false;
+  }
+  
