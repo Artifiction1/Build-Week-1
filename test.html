@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -18,20 +19,16 @@
       rel="stylesheet"
     />
     <link href="overall.css" rel="stylesheet" />
-    <script type="text/javascript" src="test.js"></script>
   </head>
   <body>
     <div id="container">
       <div id="logo">
         <img src="epicode_logo.png" height="50px" width="200px" />
       </div>
-      <div id="timer">
-        <div style="height: 100px; max-width: 200px; position: relative">
-          <canvas style="position: absolute" id="myChart"></canvas>
-          <span class="center"
-            >SECONDS<br /><span id="time">16<br /></span>REMAINING</span
-          >
-        </div>
+      <div class="timer" >
+        <canvas class="center" style="position:absolute;" id="myChart"></canvas>
+        <span id="text" class="center">SECONDS<br/><span id="time">16<br/></span>REMAINING</span>
+      </div>
       </div>
       <div class="questions">
         How can I create a <br /><b>checkbox in HTML?</b>
@@ -46,5 +43,32 @@
         <h3>QUESTION 1 <span class="qnum"> / 10</span></h3>
       </footer>
     </div>
+    <script>
+      var data = {
+
+ datasets: [
+   {
+     data: [30,70],
+     backgroundColor: [
+       "grey",
+       "#00fff0"
+     ]
+   }]
+};
+var promisedDeliveryChart = new Chart(document.getElementById('myChart'), {
+ type: 'doughnut',
+ data: data,
+ options: {
+    responsive: true,
+    cutoutPercentage: 80,
+    borderWidth: 0,
+   
+   legend: {
+     display: false
+   }
+
+ }
+});
+   </script>
   </body>
 </html>

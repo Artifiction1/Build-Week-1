@@ -4,9 +4,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-#container {
-    margin: 0 auto;
-}
+
 
 body {
     width: 80%;
@@ -23,34 +21,36 @@ position: absolute;
 
 .center {
     top: 50%;
-    left: 90%;
+    left: 50%;
     position: absolute;
-    margin-left: -80px;
-    margin-top: -30px;
     color: white;
-    font-size: 10px;
+    transform: translate(-58%, -50%);
+    
     
   }
 
   #time {
-      
-      font-size: 50px;
+      font-size: 35px;
+      color: white;
+  }
+  #text {
+      font-size: 6px;
   }
 
-
-  #timer {
-      border-radius: 50%;
-      width: 150px;
-      height: 150px;
-      background: none;
-      text-align: center;
-      align-items: center;
-      border: 10px solid #00FFFF;
-      margin-right: 100px;
-      margin-top: 50px;
-      position: relative;
-     
+  .timer {
+      margin-left: 80%;
+      height:200px;
+       max-width:200px;
+    position:relative;
   }
+
+  #myChart{
+    width: 150px;
+    height: 150px;
+    padding-top: 5px;
+    
+}
+
 
 .questions {
     font-size: 60px;
@@ -73,6 +73,7 @@ position: absolute;
     user-select: none;
     margin-right: 150px;
     margin-left: 150px;
+    position: relative;
 }
 
 .option-left {
@@ -95,7 +96,7 @@ position: absolute;
     box-shadow: -2px -2px 3px whitesmoke;
 }
 
-button:focus {
+.button:focus {
     background-color: rgb(250, 0, 196);
 }
 .qnum {
