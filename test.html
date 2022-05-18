@@ -34,45 +34,25 @@
         <span id="text" class="center">SECONDS<br/><span id="time">16<br/></span>REMAINING</span>
       </div>
       </div>
-      <div class="questions">
-        How can I create a <br /><b>checkbox in HTML?</b>
+      <div id="question-container" class="hide">
+      <div id="questions">
+        Question
       </div>
       <div class="options">
-        <input type="button" class="button" value="<input type = 'check'>" />
-        <input type="button" class="button" value="<input type = 'checkbox'>" />
-        <input type="button" class="button" value="<checkbox>" />
-        <input type="button" class="button" value="<input type = 'button'>" />
+        <input type="button" class="button" value="Answer 1" />
+        <input type="button" class="button" value="Answer 2" />
+        <input type="button" class="button" value="Answer 3" />
+        <input type="button" class="button" value="Answer 4" />
+      </div>
+    </div>
+      <div class="controls">
+        <!-- <button id="start-btn" class="start-btn btn">Start</button> -->
+        <button id="next-btn" class="next-btn btn hide" onclick="next()">Next</button>
       </div>
       <footer>
         <h3>QUESTION 1 <span class="qnum"> / 10</span></h3>
       </footer>
     </div>
-    <script>
-      var data = {
-
- datasets: [
-   {
-     data: [30,70],
-     backgroundColor: [
-       "grey",
-       "#00fff0"
-     ]
-   }]
-};
-var promisedDeliveryChart = new Chart(document.getElementById('myChart'), {
- type: 'doughnut',
- data: data,
- options: {
-    responsive: true,
-    cutoutPercentage: 75,
-    borderWidth: 0,
-   
-   legend: {
-     display: false
-   }
-
- }
-});
-   </script>
+    <script type="text/javascript" src="test.js"></script>
   </body>
-</html>
+</html>+
