@@ -1,0 +1,96 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 80%;
+    height: 100%;
+    font-family: 'Inter', sans-serif;
+    background-image: url("bg.jpg");
+    background-size: cover;
+    background-position: center;
+   background-repeat: no-repeat;
+}
+
+#logo {
+    padding-left: 30px;
+    padding-top: 50px;
+    margin-bottom: 60px;
+    position: relative;
+}
+
+
+
+#text {
+    color: white;
+    text-align: center;
+    margin-bottom: 25px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 30px;
+}
+
+#subtext {
+    font-family: 'Outfit', sans-serif;
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 30px;
+
+}
+
+#stars {
+    text-align: center;
+    margin-bottom: 60px;
+}
+.star {
+    padding: 0 8px;
+    align-items: center;
+    display: inline-block;
+}
+
+#feedback-statement {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+#comment {
+    
+    margin-top: 20px;
+    margin-left: 210px;
+
+}
+
+#comment input {
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 25px;
+    
+    
+}
+
+hr {
+    margin-top: 5px;
+    margin-left: 170px;
+    margin-right: 200px;
+    margin-bottom: 60px;
+    border: 1px solid #D20094
+}
+
+#button {
+    text-align: center;
+    margin-top: 20px;
+    
+}
+
+.btn {
+    background-color: #00FFFF;
+    border: none;
+    font-size: 30px;
+    padding: 15px 50px;
+    box-shadow: 2px 2px 40px #00FFFF;
+    cursor: pointer;
+}
