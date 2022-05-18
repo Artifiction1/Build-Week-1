@@ -6,7 +6,39 @@
 
 .logo {
     padding-left: 30px;
-    padding-top: 50px;
+    padding-top: 20px;
+    position: absolute;
+    }
+    
+    .center {
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        color: white;
+        transform: translate(-58%, -50%);
+        
+        
+      }
+    
+      #time {
+          font-size: 35px;
+          color: white;
+      }
+      #text {
+          font-size: 6px;
+      }
+    
+      .timer {
+          margin-left: 80%;
+          height:200px;
+           max-width:200px;
+        position:relative;
+      }
+    
+      #myChart{
+        width: 150px;
+        height: 150px;
+        padding-top: 5px;
 
     margin-bottom: 60px;
     position: relative;
@@ -99,7 +131,7 @@
 .option {
     margin-left: -100px
 }
-.container button {
+#container button {
     border-radius: 50px;
     font-size: 16px;
     text-align: center;
