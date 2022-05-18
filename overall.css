@@ -7,7 +7,65 @@
 .logo {
     padding-left: 30px;
     padding-top: 50px;
-    margin-bottom: 100px;
+
+    margin-bottom: 60px;
+    position: relative;
+}
+
+
+
+#text {
+    color: white;
+    text-align: center;
+    margin-bottom: 25px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 30px;
+}
+
+#subtext {
+    font-family: 'Outfit', sans-serif;
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 30px;
+
+}
+
+#stars {
+    text-align: center;
+    margin-bottom: 60px;
+}
+.star {
+    padding: 0 8px;
+    align-items: center;
+    display: inline-block;
+}
+
+#feedback-statement {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+#comment {
+    
+    margin-top: 20px;
+    margin-left: 210px;
+
+}
+
+#comment input {
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 25px;
+    
+    
+}
+
+
+
+  #something { margin-bottom: 100px;
     position: relative;
     
 }
@@ -78,54 +136,6 @@ footer {
     border-radius: 50%;
     border: 15px solid #00FFFF;
 }
-#text {
-    color: white;
-    text-align: center;
-    margin-bottom: 25px;
-    font-family: 'Outfit', sans-serif;
-    font-size: 30px;
-}
-
-#subtext {
-    font-family: 'Outfit', sans-serif;
-    color: white;
-    text-align: center;
-    margin-bottom: 30px;
-    font-size: 30px;
-
-}
-
-#stars {
-    text-align: center;
-    margin-bottom: 60px;
-}
-.star {
-    padding: 0 8px;
-    align-items: center;
-    display: inline-block;
-}
-
-#feedback-statement {
-    color: white;
-    text-align: center;
-    font-size: 30px;
-}
-
-#comment {
-
-    margin-top: 20px;
-    margin-left: 210px;
-
-}
-
-#comment input {
-    background: none;
-    border: none;
-    outline: none;
-    font-size: 25px;
-
-
-}
 
 hr {
     margin-top: 5px;
@@ -167,3 +177,4 @@ body {background-color:rgba(0, 0, 0, 0.938);background-image: url(assets/bg.jpg)
 #p1 {margin-bottom: -8%; font-size: 15pt; font-weight: bold; font-family: 'Outfit', sans-serif}
 #p2 {font-size: 15pt; font-weight: bold;font-family: 'Outfit', sans-serif}
 #myChart {position: absolute; text-align: center; margin-left: 6%;}
+

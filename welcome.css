@@ -41,15 +41,11 @@ body {
 #footer {
     margin-top: 50px;
 }
-.checkbox-white {
+.checkbox {
     width: 1.3em;
     height: 1.3em;
-    background-color: black;
     vertical-align: middle;
     border: 3px solid #ddd;
-    appearance: none;
-    -webkit-appearance: none;
-    outline: none;
     cursor: pointer;
 }
 
