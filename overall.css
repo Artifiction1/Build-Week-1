@@ -1,9 +1,4 @@
 
-* {
-    margin: 0 auto;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 
 body {
@@ -13,10 +8,11 @@ body {
 }
 
 
-#logo {
+
+.logo {
     padding-left: 30px;
     padding-top: 20px;
-position: absolute;
+    position: absolute;
 }
 
 .center {
@@ -48,6 +44,99 @@ position: absolute;
     width: 150px;
     height: 150px;
     padding-top: 5px;
+    position: absolute;
+    }
+    
+    .center {
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        color: white;
+        transform: translate(-58%, -50%);
+        
+        
+      }
+    
+      #time {
+          font-size: 35px;
+          color: white;
+      }
+      #text {
+          font-size: 6px;
+      }
+    
+      .timer {
+          margin-left: 80%;
+          height:200px;
+           max-width:200px;
+        position:relative;
+      }
+    
+      #myChart{
+        width: 150px;
+        height: 150px;
+        padding-top: 5px;
+
+    margin-bottom: 60px;
+    position: relative;
+}
+
+
+
+#text {
+    color: white;
+    text-align: center;
+    margin-bottom: 25px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 30px;
+}
+
+#subtext {
+    font-family: 'Outfit', sans-serif;
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 30px;
+
+}
+
+#stars {
+    text-align: center;
+    margin-bottom: 60px;
+}
+.star {
+    padding: 0 8px;
+    align-items: center;
+    display: inline-block;
+}
+
+#feedback-statement {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+#comment {
+    
+    margin-top: 20px;
+    margin-left: 210px;
+
+}
+
+#comment input {
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 25px;
+    
+    
+}
+
+
+
+  #something { margin-bottom: 100px;
+    position: relative;
+
     
 }
 
@@ -82,7 +171,8 @@ position: absolute;
 .option {
     margin-left: -40px
 }
-.button {
+
+#container button {
     border-radius: 50px;
     font-size: 16px;
     text-align: center;
@@ -111,9 +201,32 @@ footer {
 
 
 
-body {background-color:rgba(0, 0, 0, 0.938);background-image: url(assets/bg.jpg); background-repeat: no-repeat; background-size: cover;font-family: 'Inter', sans-serif;}
+hr {
+    margin-top: 5px;
+    margin-left: 170px;
+    margin-right: 200px;
+    margin-bottom: 60px;
+    border: 1px solid #D20094
+}
+
+#button {
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+.btn {
+    background-color: #00FFFF;
+    border: none;
+    font-size: 30px;
+    padding: 15px 50px;
+    box-shadow: 2px 2px 40px #00FFFF;
+    cursor: pointer;
+}
+
+body {background-color:rgba(0, 0, 0, 0.938);background-image: url(assets/bg.jpg); background-repeat: no-repeat; background-size: cover; font-family: 'Inter', sans-serif;}
 .Background { text-align: center; ; margin-top:5%; margin-left: 22%; background-size: 1200px; color: rgba(231,231,235,255);}
-.logo {position:absolute; left: 100px; top: 45px}
+#logo {position:absolute; left: 100px; top: 45px}
 #aboveScore {margin-top: 12%; text-align: center; margin-left: -500px}
 #aboveScore h1 {font-size: 40pt; font-weight: bolder; font-family: 'Outfit', sans-serif; }
 #aboveScore p { font-size: 20pt; font-family:'Times New Roman', Times, serif; margin-top: -2%; font-family: 'Outfit', sans-serif}
@@ -128,3 +241,4 @@ body {background-color:rgba(0, 0, 0, 0.938);background-image: url(assets/bg.jpg)
 #p1 {margin-bottom: -8%; font-size: 15pt; font-weight: bold; font-family: 'Outfit', sans-serif}
 #p2 {font-size: 15pt; font-weight: bold;font-family: 'Outfit', sans-serif}
 #myChart {position: absolute; text-align: center; margin-left: 6%;}
+

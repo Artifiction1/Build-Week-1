@@ -1,0 +1,78 @@
+body {
+    text-align: left;
+    background-image: url('bg.jpg');
+    color: white;
+    height: 100vh;
+    font-family: 'Outfit', sans-serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+
+
+}
+#heading2 {
+
+
+    color:  #900080;
+    margin-bottom: -5px;
+    font-size: 60px;
+    font-weight: bold;
+
+
+}
+
+#container {
+    margin-left: 100px;
+    padding-top: 100px;
+}
+
+#heading1 {
+    font-weight: normal;
+    font-size: 60px;
+    margin-bottom: -30px;
+}
+
+
+.epicode_logo {
+    width: 200px;
+
+}
+#footer {
+    margin-top: 50px;
+}
+.checkbox {
+    width: 1.3em;
+    height: 1.3em;
+    vertical-align: middle;
+    border: 3px solid #ddd;
+    cursor: pointer;
+}
+
+
+.button {
+    margin-left: 150px;
+    height: 50px;
+    width: 150px;
+    font-weight: bold;
+    font-size: 16px;
+
+    font-weight: 900;
+    background-color: #00FFFF;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    background: #00FFFF;
+    border: none;
+    box-shadow: 0 0 50px #00FFFF;
+
+
+}
+.Rating--Star {
+    filter: grayscale(100%); 
+    opacity: .3; 
+  }
+  img
+  {
+    width: 47;
+    height: 46;
+  }
