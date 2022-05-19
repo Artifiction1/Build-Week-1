@@ -4,9 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title>Feedback Page</title>
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,12 +17,11 @@
       href="https://fonts.googleapis.com/css2?family=Outfit&display=swap"
       rel="stylesheet"
     />
-
     <link href="feedback.css" rel="stylesheet" />
   </head>
   <body>
-    <div class ="container">
-      <div class="logo">
+    <div id="container">
+      <div id="logo">
         <img src="epicode_logo.png" height="50px" width="200px" />
       </div>
       <div id="text"><h1>Tell us how it's going</h1></div>
@@ -51,13 +48,15 @@
         <p>Leave us an open feedback about your experience so far</p>
       </div>
       <div id="comment">
-        <input type="text" placeholder="Write your comment here" />
+        <input id="textBox" type="text" placeholder="Write your comment here" />
       </div>
       <hr />
       <div id="button">
-        <button class="btn"><b>MORE INFO</b></button>
+        <button onclick="textButton()" class="btn"><b>MORE INFO</b></button>
       </div>
     </div>
+    <script src="feedback.js">
+      
+    </script>
   </body>
 </html>
-

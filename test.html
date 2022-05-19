@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Feedback Page</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="test.css" rel="stylesheet" />
+
+  </head>
+  <body>
+    <div id="container">
+      <div id="logo">
+        <img src="epicode_logo.png" height="50px" width="200px" />
+      </div>
+      <div class="timer" >
+        <canvas  id="myChart"></canvas>
+        <span id="text" class="center">SECONDS<br/><span id="time"></span><br/>REMAINING</span>
+      </div>
+      </div>
+      <div id="quizWrap"></div>
+
+      <div id="question-container" class="hide">
+      <div class="questions">
+       
+      </div>
+
+    </div>
+    
+      <div class="controls">
+        <!-- <button id="start-btn" class="start-btn btn">Start</button> -->
+        <button id="next-btn" class="next-btn btn hide" onclick="next()">Next</button>
+      </div>
+      <footer>
+        <h3>QUESTION 1 <span class="qnum"> / 10</span></h3>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="test.js"></script>
+
+  </body>
+</html>+
