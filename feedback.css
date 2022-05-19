@@ -21,8 +21,11 @@ body {
     position: relative;
 }
 
+<<<<<<< HEAD
+=======
 
 
+>>>>>>> develop
 #text {
     color: white;
     text-align: center;
@@ -37,25 +40,53 @@ body {
     text-align: center;
     margin-bottom: 30px;
     font-size: 30px;
+<<<<<<< HEAD
+=======
 
+>>>>>>> develop
 }
 
 #stars {
     text-align: center;
     margin-bottom: 60px;
 }
+<<<<<<< HEAD
+
+=======
+>>>>>>> develop
 .star {
     padding: 0 8px;
     align-items: center;
     display: inline-block;
 }
 
+<<<<<<< HEAD
+.black-star {
+    padding: 0 8px;
+    opacity: 0.1;
+}
+
+.black-star:hover {
+    opacity: 1;
+}
+
+=======
+>>>>>>> develop
 #feedback-statement {
     color: white;
     text-align: center;
     font-size: 30px;
 }
 
+<<<<<<< HEAD
+#comment-section {
+    
+    margin-top: 20px;
+    margin-left: 210px;
+}
+
+#comment-section input {
+=======
 #comment {
     
     margin-top: 20px;
@@ -64,12 +95,17 @@ body {
 }
 
 #comment input {
+>>>>>>> develop
     background: none;
     border: none;
     outline: none;
     font-size: 25px;
+<<<<<<< HEAD
+    color: white; 
+=======
     
     
+>>>>>>> develop
 }
 
 hr {
@@ -83,7 +119,10 @@ hr {
 #button {
     text-align: center;
     margin-top: 20px;
+<<<<<<< HEAD
+=======
     
+>>>>>>> develop
 }
 
 .btn {
@@ -94,4 +133,7 @@ hr {
     box-shadow: 2px 2px 40px #00FFFF;
     cursor: pointer;
 }
+<<<<<<< HEAD
+=======
 input {color: white}
+>>>>>>> develop
