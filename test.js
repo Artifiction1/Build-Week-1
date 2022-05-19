@@ -127,7 +127,7 @@ let questions = [
 const displayQuestions = function () {
   let wrap = document.querySelector(".questions");
     const question = questions[pos];
-    wrap.innerHTML += `
+    wrap.innerHTML = `
     <div class="questions${pos}">
         <p>${question.question}</p>
         <div id="answer-buttons" class="btn-grid">
