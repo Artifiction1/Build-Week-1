@@ -55,7 +55,7 @@ position: absolute;
 }
 
 
-#questions {
+.questions {
     font-size: 60px;
     color: rgb(255, 255, 255);
     text-align: center;
@@ -136,3 +136,10 @@ footer {
     color: white;
     margin-bottom: 20px;
 }
+
+
+
+
+
+
+
