@@ -30,8 +30,8 @@
         <img src="epicode_logo.png" height="50px" width="200px" />
       </div>
       <div class="timer" >
-        <canvas class="center" style="position:absolute;" id="myChart"></canvas>
-        <span id="text" class="center">SECONDS<br/><span id="time">16<br/></span>REMAINING</span>
+        <canvas  id="myChart"></canvas>
+        <span id="text" class="center">SECONDS<br/><span id="time"></span><br/>REMAINING</span>
       </div>
       </div>
       <div class="questions">
@@ -47,7 +47,7 @@
         <h3>QUESTION 1 <span class="qnum"> / 10</span></h3>
       </footer>
     </div>
-    <script>
+    <script src="test.js">
       var data = {
 
  datasets: [
@@ -59,20 +59,7 @@
      ]
    }]
 };
-var promisedDeliveryChart = new Chart(document.getElementById('myChart'), {
- type: 'doughnut',
- data: data,
- options: {
-    responsive: true,
-    cutoutPercentage: 75,
-    borderWidth: 0,
-   
-   legend: {
-     display: false
-   }
-
- }
-});
+timer()
    </script>
   </body>
 </html>
