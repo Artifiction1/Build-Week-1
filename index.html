@@ -1,52 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bench Mark Page</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Outfit&display=swap"
-      rel="stylesheet"
-    />
-    <link href="overall.css" rel="stylesheet" />
-  </head>
-  <body>
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="welcome.css">
+    <title>welcome page </title>
+</head>
+
+<body>
     <div id="container">
-      <div id="logo">
-        <img src="epicode_logo.png" height="50px" width="200px" />
-      </div>
-      <div id="timer"></div>
-      <div class="questions">
-        How can I create a <br /><b>checkbox in HTML?</b>
-      </div>
-      <div class="options">
-        <span
-          ><button class="option-left">
-            <b>input type="check" </b>
-          </button></span
-        >
-        <span>
-          <button class="option"><b>input type="checkbox"</b></button></span
-        >
-        <span>
-          <button class="option-left"><b>checkbox</b></button></span
-        >
-        <span>
-          <button class="option"><b>input type="button"</b></button></span
-        >
-      </div>
-      <footer>
-        <h3>QUESTION 1 <span class="qnum"> / 10</span></h3>
-      </footer>
+        <img src="epicode_logo.png" class="epicode_logo" />
+        <h1 id="heading1">Welcome to<br> <strong style="margin-bottom: -30px;">your exam</strong></h1>
+
+
+
+        <h2 id="heading2">Instructions </h2>
+        <p>we don't expect most engineers to know the answers to all of these <br>
+            questions,so don't worry if you are unsure o a few of them</p>
+
+        <div>
+            <ul>
+                <li>Each question is <b>timed</b> and can only be <b>answered once</b></li>
+                <li>Changing browser tab or opening other windows will <b>Invalidate the question.</b></li>
+                <li>This exam will take approx. <b>0-5 minutes</b></li>
+            </ul>
+        </div>
+        <div id="footer">
+
+            <input type="checkbox" class="checkbox"/>
+            <b>I promise to answer myself without help from anyone</b> </input>
+                <a id="link"><button id="button" onclick="checked()">PROCEED</button></a>
+
+        </div>
     </div>
-  </body>
+
+    
+    <script src="welcome.js">
+    </script>
+
+</body>
+
 </html>

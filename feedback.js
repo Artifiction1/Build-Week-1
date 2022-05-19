@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 function enableButton() {
     let textEnable = document.getElementById('comment').value
     let buttonEnable = document.getElementById('moreInfo')
@@ -8,3 +9,12 @@ function enableButton() {
     }
 }
 
+=======
+function textButton(){
+    textBox = document.getElementById("textBox")
+    if(textBox.value === ""){
+        }else{
+            console.log(textBox.value)
+        }
+}
+>>>>>>> develop
