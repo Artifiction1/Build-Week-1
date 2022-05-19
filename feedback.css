@@ -50,25 +50,35 @@ body {
     display: inline-block;
 }
 
+.black-star {
+    padding: 0 8px;
+    opacity: 0.1;
+}
+
+.black-star:hover {
+    opacity: 1;
+}
+
+
 #feedback-statement {
     color: white;
     text-align: center;
     font-size: 30px;
 }
 
-#comment {
+#comment-section {
     
     margin-top: 20px;
     margin-left: 210px;
 
 }
 
-#comment input {
+#comment-section input {
     background: none;
     border: none;
     outline: none;
     font-size: 25px;
-    
+    color: white;
     
 }
 
@@ -83,7 +93,6 @@ hr {
 #button {
     text-align: center;
     margin-top: 20px;
-    
 }
 
 .btn {
