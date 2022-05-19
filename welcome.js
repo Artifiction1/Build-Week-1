@@ -12,20 +12,24 @@ function check() {
     console.log(cb.value)
    let clickable = document.getElementById('link')
    if (cb.checked == true){
+    alert("checkbox is need to check to proceed!")
      clickable.href = "test.html"
    }else{
+    alert("checkbox is need to check to proceed!")
+
      clickable.href = ""
    }
  
 }
 function proceed() {
-  let checkbox = document.getElementById("checkbox")
-  let proceed = document.getElementById("button")
+  let checkbox = document.getElementById('checkbox')
+  let proceed = document.getElementById('button')
   proceed.addEventListener("click", function (e) {
       if (checkbox.checked === false) {
-          alert("checkbox is checked to proceed!")
+          alert("Please accepts the Terms and conditions before you Proceed forward")
+          location.href = "welcomepage.html"
       } else if (checkbox.checked === true) {
-          location.href = "questionPage.html"
+          location.href = "benchmark.html"
       }
   })
 }
