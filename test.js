@@ -118,16 +118,23 @@ function selectAnswer() {
 */
 
 let pos=0;
+var answers = [];
+
+
 
 let questions = [
-  {"question" : "what is the capital of india?" , "options" : ["hyderabad","delhi","chennai","bengalore"], "answer" : "hyderabad"},
-  {"question" : "what is even number?" , "options" : [1,3,5,8], "answer" :8}
+  {"question" : "what is the capital of germany?" , "options" : ["frankfurt","berlin","munich","wurzberg"], "answer" : "berlin"},
+  {"question" : "what is even number?" , "options" : [1,3,5,8], "answer" :8},
+  {"question" : "what is odd number?" , "options" : [2,3,4,6], "answer" :3},
+  {"question" : "what is most beautiful place ?" , "options" : ["frankfurt","venice","amsterdam","croatis"], "answer" :"venice"},
+
+
 ];
 
 const displayQuestions = function () {
   let wrap = document.querySelector(".questions");
     const question = questions[pos];
-    wrap.innerHTML += `
+    wrap.innerHTML = `
     <div class="questions${pos}">
         <p>${question.question}</p>
         <div id="answer-buttons" class="btn-grid">
@@ -142,9 +149,22 @@ const displayQuestions = function () {
 function next() {
   let wrap = document.querySelector(".questions");
   wrap.style.display = "visible"
-pos++
+   pos++
   displayQuestions()
 }
+
+
+function correctAnswer() {
+  choice = document.getElementsByName("options");
+
+ 
+    if (selected == questions[0].answer) {
+        alert("its right!!!")
+        score++ 
+  
+    }
+  } 
+  
 
 
 window.onload = function() {
