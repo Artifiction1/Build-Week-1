@@ -33,7 +33,7 @@ position: absolute;
   }
 
   #time {
-      font-size: 35px;
+      font-size: 30px;
       color: white;
   }
   #text {
@@ -42,15 +42,13 @@ position: absolute;
 
   .timer {
       margin-left: 80%;
-      height:200px;
-       max-width:200px;
     position:relative;
   }
 
   #myChart{
-    width: 150px;
-    height: 150px;
-    padding-top: 5px;
+    width: 3000px;
+    height: 300px;
+       
     
 }
 
