@@ -21,8 +21,6 @@ body {
     position: relative;
 }
 
-
-
 #text {
     color: white;
     text-align: center;
@@ -37,13 +35,13 @@ body {
     text-align: center;
     margin-bottom: 30px;
     font-size: 30px;
-
 }
 
 #stars {
     text-align: center;
     margin-bottom: 60px;
 }
+
 .star {
     padding: 0 8px;
     align-items: center;
@@ -59,7 +57,6 @@ body {
     opacity: 1;
 }
 
-
 #feedback-statement {
     color: white;
     text-align: center;
@@ -70,7 +67,6 @@ body {
     
     margin-top: 20px;
     margin-left: 210px;
-
 }
 
 #comment-section input {
@@ -78,8 +74,7 @@ body {
     border: none;
     outline: none;
     font-size: 25px;
-    color: white;
-    
+    color: white; 
 }
 
 hr {
