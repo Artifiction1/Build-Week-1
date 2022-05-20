@@ -40,12 +40,6 @@ body {
     position:relative;
   }
 
-  #myChart{
-    width: 150px;
-    height: 150px;
-    padding-top: 5px;
-    position: absolute;
-    }
     
     .center {
         top: 50%;
@@ -72,14 +66,8 @@ body {
         position:relative;
       }
     
-      #myChart{
-        width: 150px;
-        height: 150px;
-        padding-top: 5px;
+      
 
-    margin-bottom: 60px;
-    position: relative;
-}
 
 
 
@@ -227,7 +215,7 @@ hr {
 body {background-color:rgba(0, 0, 0, 0.938);background-image: url(assets/bg.jpg); background-repeat: no-repeat; background-size: cover; font-family: 'Inter', sans-serif;}
 .Background { text-align: center; ; margin-top:5%; margin-left: 22%; background-size: 1200px; color: rgba(231,231,235,255);}
 #logo {position:absolute; left: 100px; top: 45px}
-#aboveScore {margin-top: 12%; text-align: center; margin-left: -500px}
+#aboveScore {margin-top: 12%; text-align: center; margin-left: -00px}
 #aboveScore h1 {font-size: 40pt; font-weight: bolder; font-family: 'Outfit', sans-serif; }
 #aboveScore p { font-size: 20pt; font-family:'Times New Roman', Times, serif; margin-top: -2%; font-family: 'Outfit', sans-serif}
 #my button {background-color: transparent; border-color: white; color: white; width: 250px; height: 70px; border: solid; font-weight: bold; font-size: 20pt; position:absolute; bottom: 120px; left: 44%}
@@ -240,5 +228,5 @@ body {background-color:rgba(0, 0, 0, 0.938);background-image: url(assets/bg.jpg)
 #innerText {width: 10%; left: 44.5%; top: 40%; position: absolute; font-size: 12pt; shape-outside: circle(); font-family: 'Outfit', sans-serif}
 #p1 {margin-bottom: -8%; font-size: 15pt; font-weight: bold; font-family: 'Outfit', sans-serif}
 #p2 {font-size: 15pt; font-weight: bold;font-family: 'Outfit', sans-serif}
-#myChart {position: absolute; text-align: center; margin-left: 6%;}
+#myChart {position: absolute; text-align: center; margin-left:8%;}
 
