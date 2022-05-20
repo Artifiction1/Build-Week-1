@@ -160,10 +160,12 @@ const displayQuestions = function () {
     currentQuestionNr= document.getElementById("currentQNr")
     console.log(pos)
     currentQuestionNr.innerHTML = "QUESTION "+(pos+1)
-    pos++
   }}
 
 function next() {
+  if(pos > questions.length-1){
+    clickable.href = "results.html"
+  }else {
   if(text == ""){
   }else{
     if(text == questions[pos].answer){
@@ -171,7 +173,7 @@ function next() {
       console.log("correct= "+ correctAnswers)
     }else{
       wrongAnswers++
-      console.log("wrong= "+wrongAnswers)
+      console.log("wrong= "+ wrongAnswers)
     }
     bothAnswers = {correct: questions[pos].answer, chosenAnswer: text}
     results.push(bothAnswers)
@@ -180,7 +182,7 @@ function next() {
     displayQuestions()
     counter = 30
     
-}}
+}}}
 
 
 window.onload = function() {
@@ -204,6 +206,7 @@ if(text == questions[pos].answer){
   setInterval(() => {
     if(counter == 0 ){
       counter = 30
+      pos++
       displayQuestions()
       wrongAnswers++
       

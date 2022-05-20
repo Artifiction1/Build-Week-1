@@ -2,10 +2,13 @@
 function enableButton() {
     let textEnable = document.getElementById('comment').value
     let buttonEnable = document.getElementById('moreInfo')
+    let linked = document.getElementById("link")
     if(textEnable.length >= 10) {
         buttonEnable.removeAttribute('disabled')
+        linked.href="https://epicode.com/it/"
     }else {
         buttonEnable.disabled = "true"
+        linked.href=""
     }
 }
 
