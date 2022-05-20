@@ -1,5 +1,5 @@
-let totalquestions = 9
-let correctAnswers = 4
+let totalquestions = 10
+let correctAnswers = 7
 let wrongAnswers = totalquestions - correctAnswers
 var xValues = ["false", "correct"];
             var yValues = [wrongAnswers, correctAnswers];

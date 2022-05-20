@@ -136,7 +136,7 @@ let questions = [
   {question: "which one was the 1st mars rover?", options: ["Opportunity", "curiosity", "Sojourner","Mars Pathfinder"], answer: "Mars Pathfinder"},
   {question: "who wsa the 1st person in space?", options: ["Neil Armstrong", "Buzz Aldrin", "Matt Damon","Yuri Gagarin" ], answer: "Yuri Gagarin"},
   {question: "how much of the land is covered in water?", options:["71%", "68%", "80%", "0%"], answer:"0%"} 
-  
+  {question: "how many days are in a year?", options:["364", "365", "366","you just want me to fail"], answer: "you just want me to fail"}
 ];
 let totalquestions = questions.length
 const displayQuestions = function () {
