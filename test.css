@@ -33,7 +33,7 @@ position: absolute;
   }
 
   #time {
-      font-size: 35px;
+      font-size: 30px;
       color: white;
   }
   #text {
@@ -42,15 +42,13 @@ position: absolute;
 
   .timer {
       margin-left: 80%;
-      height:200px;
-       max-width:200px;
     position:relative;
   }
 
   #myChart{
-    width: 150px;
-    height: 150px;
-    padding-top: 5px;
+    width: 3000px;
+    height: 300px;
+       
     
 }
 
@@ -64,6 +62,7 @@ position: absolute;
     margin-left: 30px;
     margin-bottom: 40px;
     margin-top: 40px;
+    user-select: none;
 }
 
 .options {
@@ -77,6 +76,7 @@ position: absolute;
     margin-right: 150px;
     margin-left: 150px;
     position: relative;
+    user-select: none;
 }
 
 .option-left {
@@ -99,9 +99,32 @@ position: absolute;
     box-shadow: -2px -2px 3px whitesmoke;
 }
 
+
 .button:focus {
     background-color: rgb(250, 0, 196);
 }
+
+.start-btn {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.next-btn {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 50px;
+    margin-left: 80%;
+    cursor: pointer;
+}
+
+
+/*  .hide {
+    display: none;
+}    */
 .qnum {
     color: rgb(250, 0, 196)
 }
@@ -111,3 +134,10 @@ footer {
     color: white;
     margin-bottom: 20px;
 }
+
+
+
+
+
+
+
