@@ -40,12 +40,6 @@ body {
     position:relative;
   }
 
-  #myChart{
-    width: 150px;
-    height: 150px;
-    padding-top: 5px;
-    position: absolute;
-    }
     
     .center {
         top: 50%;
@@ -234,5 +228,5 @@ body {background-color:rgba(0, 0, 0, 0.938);background-image: url(assets/bg.jpg)
 #innerText {width: 10%; left: 44.5%; top: 40%; position: absolute; font-size: 12pt; shape-outside: circle(); font-family: 'Outfit', sans-serif}
 #p1 {margin-bottom: -8%; font-size: 15pt; font-weight: bold; font-family: 'Outfit', sans-serif}
 #p2 {font-size: 15pt; font-weight: bold;font-family: 'Outfit', sans-serif}
-#myChartt {position: absolute; text-align: center; margin-left:8%;}
+#myChart {position: absolute; text-align: center; margin-left:8%;}
 

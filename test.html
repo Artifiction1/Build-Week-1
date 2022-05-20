@@ -31,13 +31,13 @@
       </div>
       <div class="timer" >
         <canvas  id="myChart"></canvas>
-        <span id="text" class="center">SECONDS<br/><span id="time"></span><br/>REMAINING</span>
+        <span id="text" class="center"><br/><span id="time"></span><br/></span>
       </div>
       </div>
       <div id="quizWrap"></div>
 
       <div id="question-container" class="hide">
-      <div class="questions">
+      <div id="questions">
        
       </div>
 
@@ -45,14 +45,32 @@
     
       <div class="controls">
         <!-- <button id="start-btn" class="start-btn btn">Start</button> -->
-        <button id="next-btn" class="next-btn btn hide" onclick="next()">Next</button>
+        <a id="link"><button id="next-btn" class="next-btn btn hide" onclick="next()">Next</button></a>
       </div>
+      <div class="circular">
+        <div class="inner"></div>
+        <div class="number">30</div>
+        <div class="circle">
+          <div class="bar left">
+            <div class="progress"></div>
+          </div>
+          <div class="bar right">
+            <div class="progress"></div>
+          </div>
+        </div>
+      </div>
+      
       <footer>
-        <h3>QUESTION 1 <span class="qnum"> / 10</span></h3>
+        <h3><span id="currentQNr">QUESTION 1</span> <span class="qnum"> / 10</span></h3>
       </footer>
+    
     </div>
 
-    <script type="text/javascript" src="test.js"></script>
+    <script type="text/javascript" src="test.js">
+      window.onload = function() {
+  displayQuestions()
+}
+    </script>
 
   </body>
-</html>+
+</html>

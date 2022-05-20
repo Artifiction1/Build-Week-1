@@ -1,4 +1,9 @@
-
+    let correctAnswers = 0
+    let outcome = []
+    let wrongAnswers = 0
+  
+    
+   
    /*var data = {
 
 
@@ -116,37 +121,140 @@ function selectAnswer() {
 
 }
 */
-
+let text = "";
 let pos=0;
+clickable = document.getElementById("link")
+let results = []
 
 let questions = [
-  {"question" : "what is the capital of india?" , "options" : ["hyderabad","delhi","chennai","bengalore"], "answer" : "hyderabad"},
-  {"question" : "what is even number?" , "options" : [1,3,5,8], "answer" :8}
+  {question : "what is the capital of india?" , options : ["hyderabad","delhi","chennai","bengalore"], answer : "hyderabad"},
+  {question : "what is even number?" , options : [1,3,5,8], answer :8},
+  {question: "what is 2+2?", options :["3", "5", "6", "4"], answer:"4"}, 
+  {question: "which of these is a prime number?" , options: [4, 9, 12, 3], answer: 3}, 
+  {question: "This is a question.", options: ["false","true"], answer: "true"},
+  {question: "earth is the 7th planet in our solar system.", options:["false","true"], answer: "true"}, 
+  {question: "which one was the 1st mars rover?", options: ["Opportunity", "curiosity", "Sojourner","Mars Pathfinder"], answer: "Mars Pathfinder"},
+  {question: "who wsa the 1st person in space?", options: ["Neil Armstrong", "Buzz Aldrin", "Matt Damon","Yuri Gagarin" ], answer: "Yuri Gagarin"},
+  {question: "how much of the land is covered in water?", options:["71%", "68%", "80%", "0%"], answer:"0%"} 
+  
 ];
-
+let totalquestions = questions.length
 const displayQuestions = function () {
-  let wrap = document.querySelector(".questions");
+  if(pos > questions.length-1){
+    clickable.href = "results.html"
+  }else {
+  let wrap = document.querySelector("#questions");
     const question = questions[pos];
     wrap.innerHTML = `
-    <div class="questions${pos}">
+    <div id="questions${pos}">
         <p>${question.question}</p>
         <div id="answer-buttons" class="btn-grid">
-        <input type="button" class="button" value=${question.options[0]} />
+        <div><input type="button" class="button" value=${question.options[0]} />
         <input type="button" class="button" value=${question.options[1]} />
+        </div><div>
         <input type="button" class="button" value=${question.options[2]} />
         <input type="button" class="button" value=${question.options[3]} />
         </div>
+        </div>
     </div>`;
-  }
+    currentQuestionNr= document.getElementById("currentQNr")
+    console.log(pos)
+    currentQuestionNr.innerHTML = "QUESTION "+(pos+1)
+    pos++
+  }}
 
 function next() {
-  let wrap = document.querySelector(".questions");
-  wrap.style.display = "visible"
-pos++
-  displayQuestions()
-}
+  if(text == ""){
+  }else{
+    if(text == questions[pos].answer){
+      correctAnswers++
+      console.log("correct= "+ correctAnswers)
+    }else{
+      wrongAnswers++
+      console.log("wrong= "+wrongAnswers)
+    }
+    bothAnswers = {correct: questions[pos].answer, chosenAnswer: text}
+    results.push(bothAnswers)
+    console.log(results)
+    pos++
+    displayQuestions()
+    counter = 30
+    
+}}
 
 
 window.onload = function() {
   displayQuestions()
 }
+
+let getText = document.querySelector("#questions")
+getText.addEventListener('click', function (e){
+text = e.target.value
+if(text == questions[pos].answer){
+  console.log(true)
+}else{
+  console.log(false)
+}
+},false)
+
+
+
+  const numb = document.querySelector(".number");
+  let counter = 30;
+  setInterval(() => {
+    if(counter == 0 ){
+      counter = 30
+      displayQuestions()
+      wrongAnswers++
+      
+    }else{
+      counter = counter - 1;
+      numb.textContent = counter;
+    }
+  }, 1000)
+
+
+   /*
+  var xValues = ["false", "correct"];
+            var yValues = [wrongAnswers, correctAnswers];
+            var barColors = [
+            "#D20094",  
+            "#00FFFF",
+               ];
+            
+            new Chart("myChartt", {
+              type: "doughnut",
+              data: {
+                
+                datasets: [{
+                  backgroundColor: barColors,
+                  data: yValues
+                }]
+              },
+              options: {
+                cutoutPercentage: 65
+                
+                }
+              }
+            );
+           
+    function results(correct){
+        let location = document.getElementById("correct")
+        let perccentage = location.getElementsByTagName('h1')
+        let value = correct*100 / totalquestions
+        let wrongCount = totalquestions-correct
+        console.log(wrongCount)
+        let wrongValue = (totalquestions - correct)*100 /6
+        value = value.toFixed(1)
+        perccentage[0].innerText = value + "%"
+        let results = location.getElementsByTagName('p')
+        results[0].innerText = correct +"/"+totalquestions +" questions" 
+        let wrong = document.getElementById("wrong")
+        let wrongH = wrong.getElementsByTagName('h1')
+        wrongValue = wrongValue.toFixed(1)
+        wrongH[0].innerText = 100-value +"%"
+        let Wresults = wrong.getElementsByTagName('p')
+        Wresults[0].innerText = wrongCount +"/"+totalquestions 
+      }
+      */
+      

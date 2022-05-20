@@ -1,6 +1,5 @@
-
+let totalquestions = 9
 let correctAnswers = 4
-let totalquestions = 7
 let wrongAnswers = totalquestions - correctAnswers
 var xValues = ["false", "correct"];
             var yValues = [wrongAnswers, correctAnswers];
@@ -9,7 +8,7 @@ var xValues = ["false", "correct"];
             "#00FFFF",
                ];
             
-            new Chart("myChartt", {
+            new Chart("myChart", {
               type: "doughnut",
               data: {
                 

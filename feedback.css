@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 body {
     width: 80%;
     height: 100%;
@@ -40,6 +41,7 @@ body {
 #stars {
     text-align: center;
     margin-bottom: 60px;
+    font-size: 0%;
 }
 .star {
     padding: 0 8px;
